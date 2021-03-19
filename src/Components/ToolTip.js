@@ -11,6 +11,7 @@ class ToolTip extends Component {
     let width = 100;
     placementStyles.width = width + 'px';
     placementStyles.left = hoverLoc + svgLocation.left - (width/2);
+    placementStyles.top = activePoint.svgY;
 
     return (
       <div className='hover' style={ placementStyles }>

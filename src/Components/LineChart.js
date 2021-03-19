@@ -138,7 +138,7 @@ class LineChart extends Component {
         closestPoint = svgData[i];
       }
     }
-
+    
     if(relativeLoc - yLabelSize < 0){
       this.stopHover();
     } else {
@@ -179,7 +179,6 @@ class LineChart extends Component {
 
   render() {
     const {svgHeight, svgWidth} = this.props;
-
     return (
       <svg  width={svgWidth} height={svgHeight} viewBox={`10 -10 ${svgWidth} ${svgHeight}`} className={'linechart'}
             onMouseLeave={ () => this.stopHover() }
